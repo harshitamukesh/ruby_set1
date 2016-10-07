@@ -7,19 +7,12 @@
 
 	
 	
-f=File.open("exception1.txt","w")
-f.syswrite("You have opened a file ")
+
 
 begin
 a=File.open("exception1.txt","r")
-if a
-	puts "File opened"
-f=File.open("exception1.txt","r")
-f.sysread(30)
 
-else
-	raise 'A test exception.'  
-end
+raise 'A test exception.'  
 rescue Exception => e  
   puts e.message 
 

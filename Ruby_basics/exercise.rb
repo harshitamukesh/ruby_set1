@@ -25,8 +25,8 @@ puts "Square of 5 = #{b}"
 
 c=6
 c.to_i
-d=a**2
-puts "Square of 6 = #{b}"
+d=c**2
+puts "Square of 6 = #{d}"
 
 result=b+d
 
@@ -35,4 +35,14 @@ my_details=["Name-Harshita","College_Name-VVIET","Company_Name-Qwinix"]
 
 p=my_details.push("result-#{result}")
 
- print p
+ puts p
+
+ # even or odd
+
+ puts "Enter a number"
+ number=gets
+ if (number%2 == 0)
+ 	puts"The number entered is even"
+else
+ 	puts "The number entered is odd"
+ end
