@@ -11,7 +11,7 @@
 
 begin
 a=File.open("exception1.txt","r")
-
+sysread(20)
 raise 'A test exception.'  
 rescue Exception => e  
   puts e.message 

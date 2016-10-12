@@ -8,8 +8,7 @@ a = 0.5
 b = 1
 
 
-a.to_f
-b.to_f
+
 
 c = a + b
 

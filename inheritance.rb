@@ -34,23 +34,24 @@
 class Parents
 
   def father
-    puts "Last Name : Thomas"
+    print "Thomas "
   end
 
   def mother
-    puts "Second Name : Martha"
+    print "Martha "
   end
 end
 
 # Class Son inherits his last name from his Father and middle name from mother  
-class Son < Parents 
+class Son < Parents
+ 
   def firstName  
-    puts "First Name : Bruce"  
+    print "Bruce "  
   end
 
-  def fullName(name)
+  def fullName
     # Print 'My name is Bruce Martha Thomas'
-    puts "#{name}" 
+    puts "#{firstName} #{mother} #{father}" 
   end
 end
 
@@ -60,8 +61,8 @@ end
 # instantiate an object and print his firstName, secondName, lastName fullName.
 
 l=Son.new
-l.firstName
-l.mother
-l.father
-l.fullName("My name is Bruce Martha Thomas")
+puts l.firstName
+puts l.mother
+puts l.father
+l.fullName
 
